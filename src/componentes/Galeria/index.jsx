@@ -8,17 +8,17 @@ const GaleriaContainer = styled.div`
   padding: 20px;
 `;
 
-const PhotoWrapper = styled.div`
+const CampoFoto = styled.div`
   position: relative;
 `;
 
-const Photo = styled.img`
+const Imagem = styled.img`
     width: 288px;
     height: 205.71px;
     border-radius: 10px;
 `;
 
-const Caption = styled.div`
+const Legenda = styled.div`
   position: absolute;
   bottom: 0;
   left: 0;
@@ -34,7 +34,7 @@ const Caption = styled.div`
 `;
 
 function Galeria() {
-  const photos = [
+  const imagens = [
     {
       src: 'src/assets/galeria/foto-1.png',
       caption: 'Nome da foto',
@@ -79,11 +79,11 @@ function Galeria() {
 
   return (
     <GaleriaContainer>
-      {photos.map((photo) => (
-        <PhotoWrapper>
-          <Photo src={photo.src} alt={photo.caption} />
-          <Caption>{photo.caption}</Caption>
-        </PhotoWrapper>
+      {imagens.map((imagem) => (
+        <CampoFoto>
+          <Imagem src={imagem.src} alt={imagem.caption} />
+          <Legenda>{imagem.caption}</Legenda>
+        </CampoFoto>
       ))}
     </GaleriaContainer>
   );
