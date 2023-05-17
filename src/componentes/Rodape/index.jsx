@@ -35,13 +35,13 @@ function Rodape() {
         <RodapeEstilizado>
             <IconeContainer>
                 <Icone>
-                <img src="src/assets/icones/facebook.svg" alt="" />
+                    <img src="src/assets/icones/facebook.svg" alt="" />
                 </Icone>
                 <Icone>
-                <img src="src/assets/icones/twitter.svg" alt="" />
+                    <img src="src/assets/icones/twitter.svg" alt="" />
                 </Icone>
                 <Icone>
-                <img src="src/assets/icones/instagram.svg" alt="" />
+                    <img src="src/assets/icones/instagram.svg" alt="" />
                 </Icone>
             </IconeContainer>
             <RodapeTexto>Desenvolvido por Alura.</RodapeTexto>

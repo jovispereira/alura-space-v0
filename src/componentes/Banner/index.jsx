@@ -7,7 +7,7 @@ const FiguraEstilizada = styled.figure`
     display: flex;
     align-items: center;
     min-height: 328px;
-    margin: 0;
+    margin: 0 0 79px 0;
     border-radius: 20px;
 `
 

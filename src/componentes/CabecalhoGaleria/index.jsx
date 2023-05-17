@@ -2,7 +2,7 @@ import { styled } from 'styled-components';
 
 const SectionContainer = styled.section`
   background-color: transparent;
-  padding: 40px 20px;
+  padding: 0 0 36px 20px;
 `;
 
 const Titulo = styled.h2`
@@ -14,20 +14,19 @@ const Titulo = styled.h2`
     align-items: center;
 `;
 
+const TagLista = styled.ul`
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 276px;
+`;
+
 const TagTitulo = styled.p`
     color: #D9D9D9;
-    margin-left: 200px;
-    margin-right: 100px;
     font-size: 24px;
     line-height: 29px;
     display: flex;
     align-items: center;
-`;
-
-const TagLista = styled.ul`
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
+    margin-right: 262px;
 `;
 
 const TagItem = styled.li`
@@ -41,16 +40,14 @@ const TagItem = styled.li`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px 24px;
-
-    border: 2px solid;
-    border-color: #C98CF1;
+    margin: 0 0 0 24px;
 
     cursor: pointer;
     transition: background-color 0.3s ease;
 
     &:hover {
-        background-color: red;
+      border: 2px solid;
+      border-color: #C98CF1;
     }
 `;
 

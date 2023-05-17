@@ -27,10 +27,25 @@ const Legenda = styled.div`
   background-color: #04244F;
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: space-between;
   color: #FFFFFF;
   font-size: 16px;
   border-radius: 0px 0px 20px 20px;
+`;
+
+const Texto = styled.p`
+  margin-bottom: 4px;
+`;
+
+const IconeContainer = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+const Icone = styled.div`
+  font-size: 20px;
+  color: #FFFFFF;
+  margin-left: 5px;
 `;
 
 function Galeria() {
@@ -39,13 +54,22 @@ function Galeria() {
     caption: 'Nome da foto',
   }));
 
-
   return (
     <GaleriaContainer>
       {imagens.map((imagem) => (
-        <CampoFoto>
+        <CampoFoto key={imagem.src}>
           <Imagem src={imagem.src} alt={imagem.caption} />
-          <Legenda>{imagem.caption}</Legenda>
+          <Legenda>
+            <Texto>{imagem.caption}</Texto>
+            <IconeContainer>
+              <Icone>
+              <img src="src/assets/icones/favorito.png" alt="" />
+              </Icone>
+              <Icone>
+              <img src="src/assets/icones/open.png" alt="" />
+              </Icone>
+            </IconeContainer>
+          </Legenda>
         </CampoFoto>
       ))}
     </GaleriaContainer>
