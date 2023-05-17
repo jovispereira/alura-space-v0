@@ -43,6 +43,9 @@ const TagItem = styled.li`
     align-items: center;
     margin: 0px 24px;
 
+    border: 2px solid;
+    border-color: #C98CF1;
+
     cursor: pointer;
     transition: background-color 0.3s ease;
 

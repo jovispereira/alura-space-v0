@@ -15,67 +15,30 @@ const CampoFoto = styled.div`
 const Imagem = styled.img`
     width: 288px;
     height: 205.71px;
-    border-radius: 10px;
+    border-radius: 0px;
 `;
 
 const Legenda = styled.div`
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
-  height: 50px;
+  width: 288px;
+  height: 64px;
   background-color: #04244F;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   color: #FFFFFF;
   font-size: 16px;
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 0px 0px 20px 20px;
 `;
 
 function Galeria() {
-  const imagens = [
-    {
-      src: 'src/assets/galeria/foto-1.png',
-      caption: 'Nome da foto',
-    },
-    {
-        src: 'src/assets/galeria/foto-2.png',
-        caption: 'Nome da foto',
-    },
-    {
-      src: 'src/assets/galeria/foto-3.png',
-      caption: 'Nome da foto',
-    },
-    {
-      src: 'src/assets/galeria/foto-4.png',
-      caption: 'Nome da foto',
-    },
-    {
-      src: 'src/assets/galeria/foto-5.png',
-      caption: 'Nome da foto',
-    },
-    {
-      src: 'src/assets/galeria/foto-6.png',
-      caption: 'Nome da foto',
-    },
-    {
-      src: 'src/assets/galeria/foto-7.png',
-      caption: 'Nome da foto',
-    },
-    {
-      src: 'src/assets/galeria/foto-8.png',
-      caption: 'Nome da foto',
-    },
-    {
-      src: 'src/assets/galeria/foto-9.png',
-      caption: 'Nome da foto',
-    },
-    {
-      src: 'src/assets/galeria/foto-10.png',
-      caption: 'Nome da foto',
-    },
-  ];
+  const imagens = Array.from(Array(10), (_, index) => ({
+    src: `src/assets/galeria/foto-${index + 1}.png`,
+    caption: 'Nome da foto',
+  }));
+
 
   return (
     <GaleriaContainer>
