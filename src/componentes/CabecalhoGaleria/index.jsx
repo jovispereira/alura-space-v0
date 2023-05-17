@@ -2,7 +2,7 @@ import { styled } from 'styled-components';
 
 const SectionContainer = styled.section`
   background-color: transparent;
-  padding: 0 0 36px 20px;
+  padding: 0 0 0 20px;
 `;
 
 const Titulo = styled.h2`

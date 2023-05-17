@@ -29,12 +29,27 @@ const Legenda = styled.div`
   align-items: center;
   justify-content: space-between;
   color: #FFFFFF;
-  font-size: 16px;
+  font-size: 20px;
   border-radius: 0px 0px 20px 20px;
 `;
 
+const TextoContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
 const Texto = styled.p`
-  margin-bottom: 4px;
+  margin: 0;
+  padding-left: 10px;
+  font-weight: bold;
+`;
+
+const SubTexto = styled.p`
+  margin: 0;
+  padding-left: 10px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: normal;
 `;
 
 const IconeContainer = styled.div`
@@ -43,9 +58,8 @@ const IconeContainer = styled.div`
 `;
 
 const Icone = styled.div`
-  font-size: 20px;
-  color: #FFFFFF;
-  margin-left: 5px;
+  margin: 10px 0 0 5px;
+  padding-right: 10px;
 `;
 
 function Galeria() {
@@ -60,13 +74,16 @@ function Galeria() {
         <CampoFoto key={imagem.src}>
           <Imagem src={imagem.src} alt={imagem.caption} />
           <Legenda>
-            <Texto>{imagem.caption}</Texto>
+            <TextoContainer>
+              <Texto>{imagem.caption}</Texto>
+              <SubTexto>Fonte/fotógrafo/satélite</SubTexto>
+            </TextoContainer>
             <IconeContainer>
               <Icone>
-              <img src="src/assets/icones/favorito.png" alt="" />
+                <img src="src/assets/icones/favorito.png" alt="" />
               </Icone>
               <Icone>
-              <img src="src/assets/icones/open.png" alt="" />
+                <img src="src/assets/icones/open.png" alt="" />
               </Icone>
             </IconeContainer>
           </Legenda>
