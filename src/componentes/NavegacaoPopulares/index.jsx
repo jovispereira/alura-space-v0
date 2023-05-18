@@ -1,6 +1,8 @@
 import { styled } from 'styled-components';
 
 const BarraLateralContainer = styled.div`
+    position: relative;
+    bottom: 130px;
     width: 300px;
     height: 100vh;
     background-color: transparent;
